@@ -1,0 +1,30 @@
+#hair-guy {
+  max-width: 1190px;
+  background: url("/img/hair-guy.png") no-repeat;
+  background-size: contain;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%; /* <-- just a default, can be anything. */
+}
+
+.sixteen-by-nine.aspect-ratio { padding-bottom: 56.25% }
+
+.question {
+  position: absolute;
+  top: 3%;
+  color: #ffffff;
+  height: 100%;
+  font-size: 15px;
+}
+
+/* Positioning for the main box */
+.main-box {
+  width: 80%;
+  margin: 5% auto;
+}
+
+/* Styles for the content in the main box */
+.main-box > .content {
+}
