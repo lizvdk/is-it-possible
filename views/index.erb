@@ -1,0 +1,7 @@
+<h1>Questions</h1>
+
+<ul>
+  <% @questions.each do |question| %>
+    <li><b><%= question.question %></b> <br> ( Season: <%= question.season %> Episode: <%= question.episode %> ) </li>
+  <% end %>
+</ul>
