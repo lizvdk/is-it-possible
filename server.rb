@@ -1,6 +1,7 @@
 require 'sinatra'
 require "sinatra/activerecord"
 require 'sinatra/reloader'
+require 'pry'
 
 class String
   def is_i?
@@ -23,5 +24,24 @@ get '/questions/:id' do
   end
 
   @question = Question.find(id)
+  @total = @question.yes + @question.no
+  if @total > 0
+    @percent = @question.yes / @total
+  else
+    @percent = 'no answers yet'
+  end
+  erb :show
+end
+
+post '/questions/:id' do
+  id = params[:id]
+  question = Question.find(id)
+  if params[:yes] == 'true'
+    question.update_attribute(:yes, + 1)
+  else
+    question.update_attribute(:no, + 1)
+  end
+  @question = Question.find(id)
+  @total = @question.yes + @question.no
   erb :show
 end

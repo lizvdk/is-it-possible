@@ -11,15 +11,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141206172029) do
+ActiveRecord::Schema.define(version: 20141206205758) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "questions", force: true do |t|
-    t.string "question", limit: 700
-    t.string "season"
-    t.string "episode"
+    t.string  "question", limit: 700
+    t.string  "season"
+    t.string  "episode"
+    t.integer "yes",                  default: 0
+    t.integer "no",                   default: 0
   end
 
 end

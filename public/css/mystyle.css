@@ -16,7 +16,7 @@
   top: 3%;
   color: #ffffff;
   height: 100%;
-  font-size: 15px;
+  font-size: ;
 }
 
 /* Positioning for the main box */
@@ -27,4 +27,12 @@
 
 /* Styles for the content in the main box */
 .main-box > .content {
+}
+
+#no {
+  background-color: red;
+}
+
+#yes {
+  background-color: green;
 }
