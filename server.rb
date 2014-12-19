@@ -1,7 +1,6 @@
 require 'sinatra'
 require "sinatra/activerecord"
 require 'sinatra/reloader'
-require 'pry'
 
 class String
   def is_i?
