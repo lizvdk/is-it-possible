@@ -30,6 +30,8 @@ get '/questions/:id' do
   else
     @percent = 'no answers yet'
   end
+
+
   erb :show
 end
 
@@ -43,5 +45,6 @@ post '/questions/:id' do
   end
   @question = Question.find(id)
   @total = @question.yes + @question.no
-  erb :show
+
+  redirect "/questions/#{id}"
 end

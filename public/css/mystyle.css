@@ -36,3 +36,11 @@
 #yes {
   background-color: green;
 }
+
+.big-text{
+  font-size: 40px;
+}
+
+.little-text{
+  font-size: 30px;
+}

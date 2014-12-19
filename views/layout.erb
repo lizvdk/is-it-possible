@@ -26,33 +26,12 @@
         </div>
       </div>
 
-      <form method = "post" action="/questions/<%=params[:id]%>">
-        <div class = "small-12">
-          <div class = "row">
-            <div>
-              <div>
-                <button class = "small-6 columns" type='submit' name='yes' id='yes' value='true'>It's possible</button>
-              </div>
-            </div>
-            <div>
-              <div>
-                <button class = "small-6 columns" type='submit' name='no' id='no' value-'true'>Not possible</button>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="small-12 columns small-centered text-center">
-              <%= @question.yes %> out of <%= @total %> believe it's possible.
-            </div>
-          </div>
-          <div class = "row">
-            <div class = "small-12 columns small-centered">
-              <a href="/" class="button expand">RANDOM QUESTION</a>
-            </div>
-          </div>
+
+      <div class = "row">
+        <div class = "small-12 columns small-centered">
+          <a href="/" class="button expand">RANDOM QUESTION</a>
         </div>
       </div>
-    </form>
 
   </div>
 
