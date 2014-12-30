@@ -6,6 +6,8 @@
     <title>IS IT POSSIBLE?</title>
     <link rel="stylesheet" href="/css/vendor/foundation.min.css" />
     <link rel="stylesheet" href="/css/mystyle.css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/vendor/flowtype.js"></script>
   </head>
   <body>
 
@@ -19,7 +21,7 @@
           <div class="wrapper main-box">
 
             <div id="hair-guy" class="sixteen-by-nine aspect-ratio"></div>
-              <div class="question resize small-12 medium-7 columns">
+              <div id="question" class="question small-12 medium-7 columns">
                 <%= yield %>
               </div>
           </div>
@@ -34,6 +36,16 @@
       </div>
 
   </div>
-
+  <script>
+  $(function(){
+    $('.question').flowtype({
+      minimum   : 100,
+      maximum   : 1400,
+      minFont   : 8,
+      maxFont   : 80,
+      fontRatio : 22
+    });
+  });
+  </script>
   </body>
 </html>

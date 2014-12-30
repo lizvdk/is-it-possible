@@ -11,11 +11,13 @@
 
 .sixteen-by-nine.aspect-ratio { padding-bottom: 56.25% }
 
-.question {
+#question {
   position: absolute;
   top: 3%;
   color: #ffffff;
   height: 100%;
+  font-size: 8px;
+  line-height: 1.45
 }
 
 /* Positioning for the main box */
@@ -26,20 +28,4 @@
 
 /* Styles for the content in the main box */
 .main-box > .content {
-}
-
-#no {
-  background-color: red;
-}
-
-#yes {
-  background-color: green;
-}
-
-.big-text{
-  font-size: 40px;
-}
-
-.little-text{
-  font-size: 30px;
 }
